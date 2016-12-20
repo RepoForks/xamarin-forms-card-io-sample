@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="de.galonga.cardiosample">
+	<uses-sdk android:minSdkVersion="19" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<application android:label="Xamarin Forms Card.io Sample" android:icon="@drawable/icon"></application>
+</manifest>

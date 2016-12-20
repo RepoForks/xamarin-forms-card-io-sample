@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace XamFormsCardIO
+namespace CardIOSample.Models
 {
     public class CreditCard_PCL
     {
@@ -9,10 +9,5 @@ namespace XamFormsCardIO
         public string expr;
         public string redactedCardNumber;
         public string cardholderName;
-
-        public CreditCard_PCL()
-        {
-        }
     }
 }
-

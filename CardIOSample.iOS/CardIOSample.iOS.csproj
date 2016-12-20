@@ -6,7 +6,7 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{0C163520-A811-4F86-A719-C8565BC67B0E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XamFormsCardIO.iOS</RootNamespace>
+    <RootNamespace>CardIOSample.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>XamFormsCardIO.iOS</AssemblyName>
   </PropertyGroup>
@@ -97,12 +97,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamFormsCardIO\XamFormsCardIO.csproj">
-      <Project>{4F4AC80E-86D3-4F89-93B4-68A401108AD5}</Project>
-      <Name>XamFormsCardIO</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardIOSample\CardIOSample.csproj">
+      <Project>{4F4AC80E-86D3-4F89-93B4-68A401108AD5}</Project>
+      <Name>CardIOSample</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\packages\Xamarin.Forms.2.3.3.175\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.175\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
 </Project>

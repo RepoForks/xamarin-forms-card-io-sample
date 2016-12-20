@@ -7,11 +7,13 @@ using Android.OS;
 using Card.IO;
 using XamFormsCardIO;
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
+using CardIOSample.Models;
 
-namespace XamFormsCardIO.Droid
+namespace CardIOSample.Droid
 {
-    [Activity(Label = "XamFormsCardIO.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
+    [Activity(Label = "CardIOSample.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -26,9 +28,8 @@ namespace XamFormsCardIO.Droid
         {
             base.OnActivityResult(requestCode, resultCode, data);
 
-
             // Feel free to extend the CreditCard_PCL object to include more than what's here.
-            CreditCard_PCL ccPCL = new CreditCard_PCL();
+            var ccPCL = new CreditCard_PCL();
 
             if (data != null) {
 
@@ -48,10 +49,6 @@ namespace XamFormsCardIO.Droid
             } else {
                 MessagingCenter.Send<CreditCard_PCL>(ccPCL, "CreditCardScanCancelled");
             }
-
         }
-
-
     }
 }
-

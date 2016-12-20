@@ -4,18 +4,15 @@ using Android.Content;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Card.IO;
+using CardIOSample.Pages;
 
-[assembly: ExportRenderer(typeof(XamFormsCardIO.CreditCardEntryPage), typeof(XamFormsCardIO.Droid.CreditCardEntryPageRenderer))]
+[assembly: ExportRenderer(typeof(CreditCardEntryPage), typeof(CardIOSample.Droid.Renderers.CreditCardEntryPageRenderer))]
 
-namespace XamFormsCardIO.Droid
+namespace CardIOSample.Droid.Renderers
 {
     public class CreditCardEntryPageRenderer : PageRenderer
     {
         private CreditCardEntryPage ccPage;
-
-        public CreditCardEntryPageRenderer()
-        {
-        }
 
         protected override void OnElementChanged(ElementChangedEventArgs<Page> e)
         {
@@ -42,9 +39,6 @@ namespace XamFormsCardIO.Droid
             if (!string.IsNullOrEmpty(ccPage.cardIOConfig.ScanInstructions)) intent.PutExtra(CardIOActivity.ExtraScanInstructions, ccPage.cardIOConfig.ScanInstructions);
 
             activity.StartActivityForResult(intent, 101);
-
         }
-
     }
-
 }

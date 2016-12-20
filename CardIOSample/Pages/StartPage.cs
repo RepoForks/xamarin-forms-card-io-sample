@@ -3,9 +3,9 @@ using System.Net;
 using System.IO;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using CardIOSample.Models;
 
-
-namespace XamFormsCardIO
+namespace CardIOSample.Pages
 {
     public class StartPage : ContentPage
     {
@@ -31,7 +31,8 @@ namespace XamFormsCardIO
                 // Do something whenever the "iOSCreditCardReceived" message is sent.
                 // We could fill in CCV and expiration date things here, whatever else we need.
                 // This is enough to show capability, however.
-                txtCreditCardNumber.Text = sender.redactedCardNumber;
+                txtCreditCardNumber.TextColor = Color.Black;
+                txtCreditCardNumber.Text = "Scanned number: " + sender.redactedCardNumber;
                 Navigation.PopModalAsync();
             });
 
@@ -39,8 +40,6 @@ namespace XamFormsCardIO
                 // Do something whenever the "CreditCardCancelled" message is sent.
                 Navigation.PopModalAsync();
             });
-
-
         }
 
         // not implemented, as I'm not sure how to finish this out in Android.
@@ -56,10 +55,8 @@ namespace XamFormsCardIO
             //await Navigation.PopModalAsync();
         }
 
-
         private void RenderContent()
         {
-
             ScrollView scrollview = new ScrollView() { HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand };
             var rootLayout = new StackLayout() { BackgroundColor = Color.White, Spacing = 0, Orientation = StackOrientation.Vertical, HorizontalOptions = LayoutOptions.FillAndExpand, Padding = new Thickness(0, 0, 0, 10) }; // Padding = new Thickness(45, 15, 45, 15),
 
@@ -94,10 +91,6 @@ namespace XamFormsCardIO
             }
 
             Content = scrollview;
-
         }
-
     }
 }
-
-

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace XamFormsCardIO
+namespace CardIOSample.Models
 {
     /// <summary>
     /// Class holding configuration options for the Card.IO plugin
@@ -25,7 +25,5 @@ namespace XamFormsCardIO
             this.HideCardIOLogo = true;
             this.CollectCardholderName = true;
         }
-
     }
 }
-

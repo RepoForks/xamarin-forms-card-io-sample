@@ -1,8 +1,8 @@
 ﻿using System;
-
+using CardIOSample.Models;
 using Xamarin.Forms;
 
-namespace XamFormsCardIO
+namespace CardIOSample.Pages
 {
     public class CreditCardEntryPage : ContentPage
     {

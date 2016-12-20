@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using UIKit;
 
-using Foundation;
-using UIKit;
-
-namespace XamFormsCardIO.iOS
+namespace CardIOSample.iOS
 {
     public class Application
     {
@@ -18,4 +13,3 @@ namespace XamFormsCardIO.iOS
         }
     }
 }
-

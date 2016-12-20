@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamFormsCardIO", "XamFormsCardIO\XamFormsCardIO.csproj", "{4F4AC80E-86D3-4F89-93B4-68A401108AD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardIOSample", "CardIOSample\CardIOSample.csproj", "{4F4AC80E-86D3-4F89-93B4-68A401108AD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamFormsCardIO.iOS", "iOS\XamFormsCardIO.iOS.csproj", "{0C163520-A811-4F86-A719-C8565BC67B0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardIOSample.iOS", "CardIOSample.iOS\CardIOSample.iOS.csproj", "{0C163520-A811-4F86-A719-C8565BC67B0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamFormsCardIO.Droid", "Droid\XamFormsCardIO.Droid.csproj", "{898F27FB-5460-42F6-8D46-667992FA2C24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardIOSample.Droid", "CardIOSample.Droid\CardIOSample.Droid.csproj", "{898F27FB-5460-42F6-8D46-667992FA2C24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{723E02D0-B831-44BB-87AD-2A8677C613C7}"
 	ProjectSection(SolutionItems) = preProject

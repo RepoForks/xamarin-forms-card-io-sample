@@ -3,9 +3,12 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using Card.IO;
 using AVFoundation;
+using CardIOSample.Pages;
+using CardIOSample.Models;
+using CardIOSample.Renderers.iOS;
 
-[assembly: ExportRenderer(typeof(XamFormsCardIO.CreditCardEntryPage), typeof(XamFormsCardIO.iOS.CreditCardEntryPageRenderer))]
-namespace XamFormsCardIO.iOS
+[assembly: ExportRenderer(typeof(CreditCardEntryPage), typeof(CreditCardEntryPageRenderer))]
+namespace CardIOSample.Renderers.iOS
 {
     public class CreditCardEntryPageRenderer : PageRenderer
     {
